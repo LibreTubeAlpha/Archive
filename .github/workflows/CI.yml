@@ -5,11 +5,11 @@ on:
   pull_request:
     paths-ignore:
       - "README*.md"
-      - "bin/**"
+      - "build/**"
   push:
     paths-ignore:
       - "README*.md"
-      - "bin/**"
+      - "build/**"
 
 jobs:
   runner:
