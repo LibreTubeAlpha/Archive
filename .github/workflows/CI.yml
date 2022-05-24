@@ -1,0 +1,23 @@
+name: BotAPI-Generator
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths-ignore:
+      - "README*.md"
+      - "bin/**"
+  push:
+    paths-ignore:
+      - "README*.md"
+      - "bin/**"
+
+jobs:
+  debug-builds:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup
+        run: apt install apt-utils sudo -y
+
+      - name: Run Script
+        run: ./setup.sh
