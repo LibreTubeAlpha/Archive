@@ -18,7 +18,7 @@ jobs:
       image: ghcr.io/sushrut1101/docker:latest
     steps:
       - uses: actions/checkout@v3
-
       - name: Run Script
-        run: chmod 777 setup.sh
-        run: ./setup.sh
+        run: |
+          chmod 777 setup.sh
+          ./setup.sh
