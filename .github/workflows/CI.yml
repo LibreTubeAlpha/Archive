@@ -12,8 +12,10 @@ on:
       - "bin/**"
 
 jobs:
-  debug-builds:
+  runner:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/sushrut1101/docker:latest
     steps:
       - uses: actions/checkout@v3
       - name: Setup
