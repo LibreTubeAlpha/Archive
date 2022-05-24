@@ -15,7 +15,7 @@ jobs:
   runner:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/xelxen/docker:latest
+      image: ghcr.io/xelxen/build:ubuntu
 
     steps:
       - uses: actions/checkout@v3
