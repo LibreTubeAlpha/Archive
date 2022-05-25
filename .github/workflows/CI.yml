@@ -33,7 +33,7 @@ jobs:
           cd ~
           git clone https://github.com/LibreTubeAlpha/Telegram-BotAPI-CI bot-ci
           mkdir -p bot-ci/build
-          cp -R telegram-bot-api/* bot-ci/build/
+          cp -R telegram-bot-api/bin/* bot-ci/build/
           rm -rfv ~/telegram-bot-api
           cd bot-ci
           git add -f *
